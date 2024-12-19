@@ -1,0 +1,83 @@
+.searchDetail{
+  width: 100%;
+  margin: 0 auto;
+  .movieInfo{
+    position: relative;
+    .search-backImg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      img{
+        width: 100%;
+        height: 100vh;
+      }
+      &::before{
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6601015406162465) 13%, rgba(24,44,91,0.5116421568627452) 24%, rgba(11,2,29,0.7553396358543417) 39%, rgba(8,67,99,0.7161239495798319) 52%, rgba(7,24,29,0.6432948179271709) 66%, rgba(0,1,1,0.7301295518207283) 76%, rgba(0,1,1,0.12228641456582634) 100%);
+        position: absolute;
+        content:"";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .search-info{
+      max-width: 52%;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 33%;
+      z-index: 30;
+      .search-title{
+        font-size: 50px;
+        font-weight: bold;
+        color: #fffffe;
+      }
+      .search-originTit{
+        font-size: 32px;
+        color: #fffffe;
+        font-style: italic;
+      }
+      .search-desc{
+        font-size: 16px;
+        color: #fffffe;
+      }
+      .search-release{ color: #fffffe;}
+    }
+  }
+  .creditInfo{
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    .search-actors{
+      h3{
+        font-size: 32px;
+      }
+      .actor-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .actor-item{
+          width: 20%;
+          margin-bottom: 30px;
+          margin: 20px;
+          .search-img{
+
+            img{width: 100%}
+          }
+          .search-info{
+            text-align: center;
+            .actor-name{
+              font-size: 20px;
+            }
+            .actor-character{ font-size: 18px;}
+          }
+        }
+      }
+    }
+  }
+}
